@@ -46,11 +46,13 @@ public class Event {
 	}
 
 	public Date getDate() {
-		return date;
+		Date copiedDate = new Date (date.getTime());
+		return copiedDate;
 	}
 
 	public void setDate(Date date) {
-		this.date = date;
+		Date copiedDate = new Date (date.getTime());
+		this.date = copiedDate;
 	}
 
 	public int getEventID() {
